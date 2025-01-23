@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Jhankar vai style: Main navigation -->
+    <nav class="nav-container">
+        <div class="container nav-flex">
+            <div class="logo-container">
+                <img class="logo-box" src="/assets/logo.png">
+                <span class="logo-text">SCHOOL</span>
+            </div>
+            
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Facilities</a>
+                <a href="#">Admission</a>
+            </div>
+
+            <button class="contact-btn">Contact</button>
+            
+            <!-- Jhankar vai style: Mobile menu trigger -->
+            <div class="menu-icon">☰</div>
+        </div>
+    </nav>
+
+    <!-- Jhankar vai style: Mobile menu -->
+    <div class="mobile-menu">
+        <a href="#" style="color: #F59E0B;">Home</a>
+        <a href="#" style="color: #60A5FA;">About</a>
+        <a href="#" style="color: #22D3EE;">Facilities</a>
+        <a href="#" style="color: #A78BFA;">Admission</a>
+        <button class="contact-btn">Contact</button>
+    </div>
+
+    <!-- Jhankar vai style: Hero section -->
+    <section class="container hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="orange-text">Empowering</span> students from small age 
+                <span class="blue-text">towards vision</span>
+            </h1>
+            <p class="hero-description">
+                With the courage, Confidence, Creativity and Compassion to make 
+                their Unique Contribution in a Diverse and Dynamic World.
+            </p>
+            <button class="enroll-btn">Enroll Now</button>
+        </div>
+
+      <div class="hero-img-container">
+
+        
+        <div class="hero-img">
+<img src="/assets/hero-kids.png">
+        </div>
+      </div>
+
+    </section>
+
+    <section class="container curriculum-section">
+        <h2>Standard Curriculum</h2>
+        <div class="curriculum-cards">
+          <div class="curriculum-card">
+            <img src="/assets/kinder.png" alt="Kinder Icon">
+            <div class="curriculum-card-header">Kinder (3-6 Years)</div>
+            <div class="curriculum-card-content">
+              <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus, sodales parturient.</p>
+            </div>
+            <div class="curriculum-card-footer">
+              <button>Read More</button>
+            </div>
+          </div>
+          
+          <div class="curriculum-card">
+            <img src="/assets/elementary.png" alt="Elementary Icon">
+            <div class="curriculum-card-header">Elementary School</div>
+            <div class="curriculum-card-content">
+              <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus, sodales parturient.</p>
+            </div>
+            <div class="curriculum-card-footer">
+              <button>Read More</button>
+            </div>
+          </div>
+    
+          <div class="curriculum-card">
+            <img src="/assets/middle.png" alt="Middle Icon">
+            <div class="curriculum-card-header">Middle (10-16 Years)</div>
+            <div class="curriculum-card-content">
+              <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus, sodales parturient.</p>
+            </div>
+            <div class="curriculum-card-footer">
+              <button>Read More</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- Jhankar vai style: Simple JavaScript for mobile menu -->
+    <script>
+        const menuIcon = document.querySelector('.menu-icon');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        menuIcon.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
