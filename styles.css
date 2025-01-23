@@ -1,4 +1,4 @@
-/* Jhankar vai style: Start with reset */
+/*  Start with reset */
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +6,7 @@
   font-family: "Quicksand";
 }
 
-/* Jhankar vai style: Main container */
+/* Main container */
 .container {
   width: 100%;
   max-width: 1200px;
@@ -81,14 +81,14 @@
   font-weight: 500;
 }
 
-/* Jhankar vai style: Hamburger menu */
+/*  Hamburger menu */
 .menu-icon {
   display: none;
   font-size: 24px;
   cursor: pointer;
 }
 
-/* Jhankar vai style: Hero section */
+/*  Hero section */
 .hero-section {
   padding: 20px 0;
   display: flex;
@@ -151,7 +151,7 @@
   align-items: center;
 }
 
-/* Jhankar vai style: Mobile responsive */
+/*  Mobile responsive */
 @media screen and (max-width: 390px) {
   .nav-links,
   .contact-btn {
@@ -166,6 +166,10 @@
     flex-direction: column-reverse;
     text-align: center;
     padding: 24px 0;
+  }
+  .hero-section img {
+    width: 336px;
+    height: 413px;
   }
 
   .hero-title {
@@ -353,9 +357,22 @@
   width: 60px;
   margin-top: 60px;
 }
-@media (max-width: 768px) {
-  .curri-card {
-    max-width: 100%;
+@media (max-width: 390px) {
+  .curri-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 24px 0;
+  }
+  .curri-section h2 {
+    text-align: start;
+    margin-left: 20px;
+  }
+  .curri-cards {
+    flex-direction: column;
+  }
+
+  .large-container {
+    display: none;
   }
 }
 .story-page {
@@ -364,8 +381,7 @@
   margin: auto;
   margin-bottom: 80px;
   background: linear-gradient(white, rgba(255, 166, 0, 0.304)),
-  url(/assets/bg.png);
-  
+    url(/assets/bg.png);
 }
 .story-page h2 {
   font-size: 46px;
@@ -445,6 +461,7 @@
   display: flex;
   margin: auto;
   justify-content: center;
+  position: relative;
 }
 
 .card-date1 {
@@ -457,7 +474,7 @@
   width: 175px;
   height: 48px;
   position: absolute;
-  top: 213%;
+  top: 25%;
   margin-left: 20px;
   align-items: center;
   text-align: center;
@@ -477,7 +494,7 @@
   width: 175px;
   height: 48px;
   position: absolute;
-  top: 213%;
+  top: 77%;
   margin-left: 20px;
   align-items: center;
   text-align: center;
@@ -493,7 +510,7 @@
   width: 175px;
   height: 48px;
   position: absolute;
-  top: 250%;
+  top: 77%;
   margin-left: 20px;
   align-items: center;
   text-align: center;
@@ -509,9 +526,96 @@
   width: 175px;
   height: 48px;
   position: absolute;
-  top: 250%;
+  top: 25%;
   margin-left: 20px;
   align-items: center;
   text-align: center;
   justify-content: center;
 }
+
+@media (max-width: 390px) {
+    .story-page {
+     
+        width: 358px; /* Adjust width to fit the screen */
+        height: 550px; /* Allow height to adjust dynamically */
+        margin: 0 auto;
+     
+        background: linear-gradient(white, rgba(255, 166, 0, 0.304)),
+          url(/assets/bg.png);
+      
+      
+
+    }
+    .curri-nav{
+        flex-direction: column;
+    }
+    
+}
+
+
+    .footer {
+        background-color: #00aaff;
+        color: white;
+        padding: 40px 20px;
+      }
+      
+      .footer-container {
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin: auto;
+      }
+      
+      .footer-section {
+        flex: 1;
+        margin: 0 20px;
+        min-width: 200px;
+      }
+      
+      .kids-education .footer-logo {
+        width: 50px;
+        margin-bottom: 10px;
+      }
+      
+      .kids-education h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+      
+      .kids-education p {
+        font-size: 14px;
+        line-height: 1.5;
+      }
+      
+      .about-school h3,
+      .keep-in-touch h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+      
+      .about-school ul {
+        list-style: none;
+        padding: 0;
+      }
+      
+      .about-school ul li {
+        margin: 5px 0;
+      }
+      
+      .about-school ul li a {
+        color: white;
+        text-decoration: none;
+      }
+      
+      .keep-in-touch .social-icons a {
+        display: inline-block;
+        margin-right: 10px;
+      }
+      
+      .keep-in-touch .social-icons img {
+        width: 30px;
+        height: 30px;
+      }
