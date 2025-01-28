@@ -392,11 +392,12 @@
     display: none;
   }
 }
+
 .story-page {
-  width: 1440px;
+
   height: 1018px;
   margin: auto;
-  margin-bottom: 80px;
+
   background: linear-gradient(white, rgba(255, 166, 0, 0.304)),
     url(/assets/bg.png);
 }
@@ -551,21 +552,12 @@
 }
 
 @media (max-width: 390px) {
-    .story-page {
-     
-        width: 358px; /* Adjust width to fit the screen */
-        height: 550px; /* Allow height to adjust dynamically */
-        margin: 0 auto;
-     
-        background: linear-gradient(white, rgba(255, 166, 0, 0.304)),
-          url(/assets/bg.png);
-      
-      
 
-    }
-    .curri-nav{
-        flex-direction: column;
-    }
+  .sm-cards-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr) ;
+  }
+    
     
 }
 
